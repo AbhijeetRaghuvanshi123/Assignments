@@ -10,9 +10,10 @@ body{
 
 /* header & navigation */
 header{
-    background-color:rgb(15, 120, 225);
-    color: white;
+    background-color:#333;
+    color: #308d46;
     padding: 1rem 0;
+    padding-bottom: 2rem;
     font-size: 1.5rem;
 }
 
@@ -35,7 +36,7 @@ nav ul li a:hover{
 }
 
 nav ul li a{
-    color: white;
+    color: #308d46;
     text-decoration: none;
 }
 /* sections */
@@ -50,7 +51,7 @@ section{
 }
 
 section h1{
-    color:rgb(55, 233, 209);
+    color:#308d46;
     margin: 0;
     font-size: 2rem;;
 }
