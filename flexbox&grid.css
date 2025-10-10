@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    font-family:'poppins', sans-serif;
+    background-color: white;
+    color: black;
+}
+
+.header{
+    background-color:rgba(6, 57, 129, 0.773) ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: aliceblue;
+    padding: 1rem 4rem;
+}
+
+.logo{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 600;
+}
+
+.nav ul li a:hover{
+    text-decoration: underline;
+}
+
+.banner{
+    text-align: center;
+    padding: 5rem 1rem;
+    box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    margin: 1rem;
+    border-radius: 0.5rem;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 3rem;
+}
+
+.card{
+    text-align: center;
+    padding: 3rem;
+    box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+}
+
+.card h2{
+    color: rgba(6, 57, 129, 0.773);
+}
+
+.footer{
+    background-color: rgb(30, 29, 29);
+    padding: 1rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.489);
+}
+
+@media (max-width: 768px) {
+    .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .header{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav ul{
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .grid-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .header{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav ul{
+        gap: 0.5rem;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+}
